@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单判断</title>
+		<script type ="text/javascript">
+			//判断输入的用户名是否合格
+			function comfirm(){
+				var user = document.getElementById("username");//获取输入的用户名
+				var username = user.value;//获取文本框中的值
+				var len = username.length;//获取值得长度
+				var password = document.getElementById("userpasswprd");//获取密码 
+				var upassword = password.value;
+				var comfirmpassword = document.getElementById("comfirmpassword");//获取确认密码 
+				var cpassword = comfirmpassword.value;
+				if(username && len>=5&&len<=15){
+					alert("恭喜你,用户名添加成功!");
+				}else if(username){
+					alert("用户名的长度最少为5个字符,最多为15个字符");
+				}else{
+					alert("用户名不能为空...");
+				}
+				if(upassword ===cpassword){
+					alert("密码一致,恭喜你注册成功!");
+				}else{
+					alert("两次输入的密码不一致,请重新输入");
+				}
+				
+				/* console.debug(username);
+				console.debug(len); */
+			}
+		</script>
+	</head>
+	<body>
+		<form action="#" method="get">
+			用户名&nbsp;&nbsp;&nbsp;&nbsp;:<input type="text" id="username" name="username"/><br/>
+			密码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<input type="password" id="userpasswprd" name="userpasswprd"/><br/>
+			确认密码:<input type="password" id="comfirmpassword" name="comfirmpassword"/><br/>
+			<input type="button" value="提交" onclick="comfirm()"><br/>
+		</form>
+		
+	</body>
+</html>

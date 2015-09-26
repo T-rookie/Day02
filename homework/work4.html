@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>work3</title>
+	<style>
+		div{
+			background-color: red;
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+	<script type="text/javascript">
+	
+		function changeColor(){
+			var mydiv = document.getElementById("mydiv");
+			//console.debug(mydiv);//得到一个控件之后,打印到控制台,然后在DOM面板可以查看到这个控件的所有属性,然后就可以可以修改属性
+			mydiv.style.backgroundColor = "blue";
+		}
+	</script>
+		
+	</head>
+	<body>
+	<input type="button" value="点我就可以变色" onclick="changeColor();" />
+		<div id="mydiv">你知道最厉害的武器是什么吗,没错,就是补丁...</div>
+	</body>
+</html>

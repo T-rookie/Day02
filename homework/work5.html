@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>超级会员</title>
+		<style>
+			font{
+				color: silver;
+			}
+			body{
+				background-image: url("2016.jpg");
+				color: silver;
+			}
+		</style>
+	</head>
+	<body>
+		<form action = "#" method="get">
+		1.会员登录名及其密码:<br/><br/>
+			用户名:<input type = "text" name ="userName"  /><font color="red">*</font><button>检查用户名</button><font color="blue">5-15位,请用英文(a-z,A-Z),数字(0-9)</font><br/><br/>
+			密码&nbsp;:<input type = "password" name = "userpassword"/><font color="red">*</font><font color="blue">5-15位,请用英文(a-z,A-Z),数字(0-9)注意区分大小;密码不能和用户名相同,易记,难猜</font><br/><br/>
+			确认密码:<input type = "password" name = "userpassword1"><font color="red">*</font><font color="blue">两次密码必须相同</font><br/><br/>
+		2.姓名和练习方式:<br/><br/>
+			真实姓名:<input type = "text" name = "realName"/><font color="red">*</font>
+				   <input type = "radio" name = "sex" checked="checked">先生
+				   <input type = "radio" name = "sex" >女士<br/><br/>
+			电子邮箱:<input type = "text" name ="useremail"  /><font color="red">*</font><font color="red">非常重要&nbsp;&nbsp;&nbsp;</font><font color="blue">这是客户与你练习的首选方式请一定填写真实</font><br/><br/>
+			固定电话:<input type = "text" name = "fixedPhone"/><font color="red">*</font><font color="blue">区号+电话号码</font><br/><br/>
+			公司所在地:&nbsp;&nbsp;&nbsp;<select name = "city">
+						<option value = "1">北京</option>
+						<option value = "2">上海</option>
+						<option value = "3">广州</option>
+						<option value = "4">成都</option>
+			        </select>
+			        <select name = "area">
+						<option value = "1">高新区</option>
+						<option value = "2">龙泉驿区</option>
+						<option value = "3">武侯区</option>
+						<option value = "4">温江区</option>
+			        </select><br/><br/>
+			街道地址:<input type ="text" name = "address" ><font color="red">*</font><font color="blue">填写县(区),街道,门牌号</font><br/><br/>
+			传真&nbsp;&nbsp;&nbsp;&nbsp;:<input type = "text" name = "fax"><br/><br/>
+			手机号码:<input type = "text" name = "phonenumber"><br/><br/>
+			邮政编码:<input type = "text" name = "postnumber"><br/><br/>
+		3.公司名称和主营业务:<br/><br/>
+			贵公司名称:<input type = "text" name = "companyName"><font color="red">*</font><font color="blue">请填写在工商局注册的公司/商号全称;无商号的个体户,请填写执照上的姓名,如:张三(个体经营)</font><br/><br/>	
+			你的职位:<input type = "text" name = "position"><font color="red">*</font><br/><br/>
+			主营行业:<select name = "business">
+						<option value = "1">电器电工</option>
+						<option value = "2">通信工程</option>
+						<option value = "3">车辆工程 </option>
+						<option value = "4">化工</option>
+			        </select><font color="blue">请正确选择,你会收到该行业的供求信息</font><br/><br/>
+			主营产品/服务:<input type = "text" name = "produce"><font color="red">*</font><font color="blue">三个相关产品名,至少写一个.例如:太阳能,布料,内衣</font><br/><br/>
+			公司网址:<input type = "text" name = "URL" value = "http://"><br/><br/>		
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type = "submit" value = "确认提交">
+		</form>
+	</body>
+</html>
